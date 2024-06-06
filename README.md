@@ -5,14 +5,15 @@ Please note that it may be out of date due to the rapid advancements in UDC rest
 
 ## Motivation
 Image attributes such as lightness and color are mostly linked to the low-frequency component. 
-![image](https://github.com/Tillyhere/UDC_Restoration/assets/48005193/0213d1d5-81e6-4390-9ddc-f6a8acb82faf)
+<img src="https://github.com/Tillyhere/UDC_Restoration/assets/48005193/0213d1d5-81e6-4390-9ddc-f6a8acb82faf" alt="Motivation Image" width="500"/>
 
 ## Pyramid Scheme
 Network Overview (Laplacian Pyramid)
-![image](https://github.com/Tillyhere/UDC_Restoration/assets/48005193/85989902-ad21-4ff3-9017-b6e9973ecd86)
+
+<img src="https://github.com/Tillyhere/UDC_Restoration/assets/48005193/85989902-ad21-4ff3-9017-b6e9973ecd86" alt="Network Overview" width="500"/>
 
  Proposed module incorporates pyramid channels and pyramid feature receptive fields.
-![image](https://github.com/Tillyhere/UDC_Restoration/assets/48005193/3943e5ac-e29b-4b9a-97c1-63591bcae135)
+<img src="https://github.com/Tillyhere/UDC_Restoration/assets/48005193/3943e5ac-e29b-4b9a-97c1-63591bcae135" alt="Proposed Module" width="500"/>
 
 
 A rough report can be found here. [Baidu Disk](https://pan.baidu.com/s/1RvKKIXEXVfljv_3kupyBlw?pwd=3407) (verification code: 3407)
@@ -21,7 +22,12 @@ A rough report can be found here. [Baidu Disk](https://pan.baidu.com/s/1RvKKIXEX
 Training
 
 For POLED
-'''
- python train_lplr_VII.py with poled_lp_lr_VII
-'''
+```bash
+python train_lplr_VII.py with poled_lp_lr_VII
+```
 
+Small Tricks:
+Switch loss function to improve saturated performance. (L1 and then L2 / L2 and then L1)
+Use multi-scale feature fusion.
+The activation function may not always be necessary. 
+Consider the receptive field.
