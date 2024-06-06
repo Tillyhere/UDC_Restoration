@@ -28,6 +28,9 @@ python train_lplr_VII.py with poled_lp_lr_VII
 
 Small Tricks:
 Switch loss function to improve saturated performance. (L1 and then L2 / L2 and then L1)
+
 Use multi-scale feature fusion.
+
 The activation function may not always be necessary. 
+
 Consider the receptive field.
