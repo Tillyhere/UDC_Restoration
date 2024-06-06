@@ -19,14 +19,14 @@ Network Overview (Laplacian Pyramid)
 A rough report can be found here. [Baidu Disk](https://pan.baidu.com/s/1RvKKIXEXVfljv_3kupyBlw?pwd=3407) (verification code: 3407)
 
 
-##Training
+## Training
 
 For POLED
 ```bash
 python train_lplr_VII.py with poled_lp_lr_VII
 ```
 
-##Small Tricks:
+## Small Tricks:
 Switch loss function to improve saturated performance. (L1 and then L2 / L2 and then L1)
 
 Use multi-scale feature fusion.
